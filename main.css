@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.logo{
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span{
+    color: #ff0000;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0   rgba(255,255,255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 2em;
+}
+
+.contact-fore{
+    background: #fffcfc;
+}
+
+.contact-fore form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*.contact-fore form .block{
+    grid-column: 1 / 3;
+}*/
+
+
+.contact-fore form p{
+    margin: 0;
+    padding: 1em;
+}
+
+
+
+.contact-fore form button,
+.contact-fore form input,
+.contact-fore form textarea{
+    width: 100%;
+    padding: .7em;
+    border: solid;
+    background: none;
+    outline: black;
+    color:black;
+    border-bottom-style: solid;
+} 
+
+.contact-fore form button {
+    background: #1E90FF;
+    color: rgb(255, 255, 255);
+    border: none;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-fore form button:hover,
+.contact-fore form button:focus {
+    background: #00BFFF;
+    color: white;
+    grid-column: 1;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* Pantalla grande */
+@media(min-width: 700px){
+    body{
+        padding: 0, 4rem;
+    }
+
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url(./imagen/desarrollo.jpg);
+        background-size: 50% auto;       
+    }
+
+    .contact-wrapper > *{
+        padding: 2em;
+    }
+ }
